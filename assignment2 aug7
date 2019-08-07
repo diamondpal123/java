@@ -1,0 +1,27 @@
+import java.lang.*;
+class BCA
+{
+static int total;
+String name;
+public BCA (String name)
+{
+this.total++;
+this.name = name;
+}
+public void show()
+{
+System.out.print("\n Name=" + name);
+System.out.println("\n total Students=" + total);
+}
+public static void main(String[] args)
+{
+BCA obj1 = new BCA("Diamond");
+BCA obj2 = new BCA("PAl");
+obj1.show();
+System.out.println("\n Obj1:\n");
+obj2.show();
+System.out.println("\n Obj2:\n");
+}
+}
+
+
